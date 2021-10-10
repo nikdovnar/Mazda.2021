@@ -24,6 +24,7 @@ body {
 	margin: 0 auto;
 }
 .swiper {
+	width: 1440px;
 	height: 900px;
 }
 .slide-1 {

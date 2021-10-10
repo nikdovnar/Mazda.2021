@@ -11,12 +11,12 @@ const swiper1 = new Swiper('.swiper1', {
 		delay: 3500,
 		stopOnLastSlide: false,
 		disableOnInteraction: false,
-	}, 
+	},
 	keyboard: true,
 	loop: true,
 	speed: 1200,
 });
-const swiper2 = new Swiper ('.swiper__news', {
+const swiper2 = new Swiper('.swiper__news', {
 	navigation: {
 		nextEl: '.swiper-button-next',
 	},
@@ -28,4 +28,4 @@ const swiper2 = new Swiper ('.swiper__news', {
 	keyboard: true,
 	loop: true,
 	speed: 1200,
-});  
+});
