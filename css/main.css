@@ -1,0 +1,528 @@
+:root {
+	--font-family-page: "Libre Franklin", sans-serif;
+	--font-size-page: 20px;
+	--color-hover-effect: #4287f5;
+	--speed-hover: 0.3s ease-out;
+	--bg-color-btn: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(153, 153, 153, 0.95) 133.33%);
+	--bg-color-page: #f5f3f3;
+	--color-header-text: #fffffff2;
+	--color-header-elements: #ffffff;
+	--color-header-btn-text: #000000;
+	--color-main-text: #000000;
+	--color-main-bg-search: #999999;
+	--сolor-text-footer: #999999;
+	--bg-color-footer: #2b2b2b;
+}
+html,
+body {
+	font-family: var(--font-family-page);
+	font-size: var(--font-size-page);
+	background-color: var(--bg-color-page);
+}
+.page {
+	width: 1440px;
+	margin: 0 auto;
+}
+.swiper {
+	height: 900px;
+}
+.slide-1 {
+	background: url("../img/slides/Slideshow-1.jpg") center/cover;
+}
+.slide-2 {
+	background: url("../img/slides/Slideshow-2.jpg") center/cover;
+}
+.slide-3 {
+	background: url("../img/slides/Slideshow-3.jpg") center/cover;
+}
+.slide-4 {
+	background: url("../img/slides/Slideshow-4.jpg") center/cover;
+}
+.slide-5 {
+	background: url("../img/slides/Slideshow-5.jpg") center/cover;
+}
+.swiper-button-next {
+	margin-right: 75px;
+	z-index: 1 !important;
+}
+.swiper-button-prev {
+	margin-left: 75px;
+	z-index: 1 !important;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	color: var(--color-header-elements);
+}
+.swiper-pagination1 {
+	margin-bottom: 35px;
+	z-index: 1 !important;
+	position: absolute;
+}
+span.swiper-pagination-bullet {
+	width: 14.74px;
+	height: 15px;
+	background: #99999973;
+	margin: 0px 13.07px !important;
+	opacity: 1;
+}
+span.swiper-pagination-bullet-active {
+	background: var(--color-header-elements);
+}
+.burger__menu {
+	width: 0;
+	height: 0;
+}
+#menu__toggle {
+	opacity: 0;
+}
+.menu__btn {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 56px;
+	left: 93px;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	z-index: 2;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	background-color: var(--color-header-elements);
+}
+.menu__btn > span::before {
+	content: "";
+	top: -8px;
+}
+.menu__btn > span::after {
+	content: "";
+	top: 8px;
+}
+.menu__box {
+	position: absolute;
+	visibility: hidden;
+	top: 0;
+	left: -100%;
+	width: 50%;
+	height: 100%;
+	padding-top: 182px;
+	padding-left: 150px;
+	background-color: var(--bg-color-footer);
+	text-align: left;
+	z-index: 1;
+	overflow: auto;
+}
+.menu__box li {
+	margin-bottom: 12px;
+}
+.menu__item {
+	color: rgba(255, 255, 255, 0.6);
+	font-family: var(--font-family-page);
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 56px;
+}
+.menu__item:hover {
+	color: var(--color-hover-effect);
+	background-color: #3d464d;
+	transition: var(--speed-hover);
+}
+#menu__toggle:checked ~ .menu__btn > span {
+	transform: rotate(45deg);
+	background-color: rgba(255, 255, 255, 0.6);
+	width: 40px;
+	height: 1px;
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+	top: 0;
+	transform: rotate(0);
+	background-color: rgba(255, 255, 255, 0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+	width: 40px;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.6);
+	top: 0;
+	transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+	visibility: visible;
+	left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	transition-duration: 0.3s;
+}
+.menu__box {
+	transition-duration: 0.3s;
+}
+.menu__item {
+	transition-duration: 0.3s;
+}
+.accordion {
+	background-color: var(--bg-color-footer);
+	color: rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+	padding: 0px;
+	width: 463px;
+	text-align: left;
+	font-size: 48px;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+.active,
+.accordion:hover {
+	color: var(--color-header-elements);
+	background-color: var(--bg-color-footer);
+}
+.panel {
+	margin-top: 27px;
+	width: 427px;
+	padding: 0 18px;
+	background-color: var(--bg-color-footer);
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	margin-bottom: 10px;
+}
+.panel p {
+	margin-bottom: 17px;
+}
+.panel a {
+	font-size: 24px;
+	color: rgba(255, 255, 255, 0.6);
+}
+.panel a:hover {
+	color: var(--color-hover-effect);
+	transition: var(--speed-hover);
+}
+.header {
+	color: var(--color-header-text);
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 400;
+	line-height: 24px;
+	position: relative;
+}
+.header__logo img {
+	margin-top: 31px;
+	width: 102px;
+	height: 88px;
+}
+.header__title {
+	margin-top: 85px;
+}
+.header__title p {
+	margin-top: 22px;
+	font-size: 48px;
+	line-height: 60px;
+	letter-spacing: 2px;
+}
+.header__title h1 {
+	font-weight: 300;
+}
+.header__button {
+	position: absolute;
+	left: 611px;
+	bottom: 121px;
+}
+.header__button a {
+	background: var(--bg-color-btn);
+	color: var(--color-header-btn-text);
+	padding: 18px 64px;
+	border-radius: 10px;
+	font-weight: 500;
+}
+.header__button a:hover {
+	color: var(--color-hover-effect);
+	transition: var(--speed-hover);
+}
+.main__wrapper-content {
+	width: 1200px;
+	margin: 0 auto;
+}
+.main__title-top {
+	text-align: center;
+	margin: 86px 0px 52px;
+	line-height: 24.24px;
+}
+.main__title-top h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 32px;
+}
+.main__search {
+	width: 500px;
+	height: 60px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	border-radius: 7px;
+	background-color: var(--color-main-bg-search);
+}
+.main__search-wrapper {
+	display: inline-grid;
+	grid-auto-flow: column;
+	align-items: center;
+	column-gap: 12px;
+}
+.main__search button {
+	margin-left: 17px;
+	background-color: inherit;
+}
+.main__search input {
+	width: 408px;
+	font-size: 24px;
+	background-color: var(--color-main-bg-search);
+}
+::placeholder {
+	color: #ffffff82;
+}
+.main__title h2 {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	margin-bottom: 37px;
+}
+.main__vehicles {
+	margin: 92px 0px 95px;
+}
+.main__vehicles-content {
+	display: grid;
+	grid: 340px 309px / 272px 253px 312px 302px;
+	grid-gap: 20px;
+}
+.main__btn {
+	height: 75px;
+	background-color: rgba(43, 43, 43, 0.75);
+	padding: 25px 0px 25px 30px;
+}
+.main__btn a {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: var(--color-header-text);
+}
+.main__btn a:hover {
+	color: var(--color-hover-effect);
+	transition: var(--speed-hover);
+}
+.btn-sedan {
+	height: 98px;
+}
+.main__btn-item {
+	display: grid;
+	align-content: end;
+}
+.main__vehicles-all {
+	background: url("../img/all_vehicles.jpg") center/cover;
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+}
+.main__vehicles-crossovers {
+	background: url("../img/crossovers.jpg") center/cover;
+	grid-column: 3 / 5;
+}
+.main__vehicles-sedan {
+	background: url("../img/sedan.jpg") center/cover;
+}
+.main__vehicles-sport {
+	background: url("../img/sport.jpg") center/cover;
+}
+.main__options {
+	height: 300px;
+	display: grid;
+	grid-template-columns: 350px 350px 350px;
+	grid-gap: 40px;
+	justify-content: center;
+	margin-bottom: 95px;
+}
+.main__options-content {
+	background-color: var(--bg-color-footer);
+	border-radius: 10px;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.main__options-content svg {
+	margin-bottom: 30px;
+}
+.main__options-content a {
+	color: #ffffff99;
+}
+.main__options-content a:hover {
+	color: var(--color-hover-effect);
+	transition: var(--speed-hover);
+}
+.main__universe-lifestyle {
+	display: grid;
+	grid-template: 350px 350px / 590px 587px;
+	grid-gap: 22px;
+	margin-bottom: 97px;
+}
+.main__universe-lifestyle-innovation {
+	background: url("../img/innovation.jpg") center/cover;
+}
+.main__universe-lifestyle-design {
+	background: url("../img/design.jpg") center/cover;
+}
+.main__universe-lifestyle-sport {
+	background: url("../img/motor-sport.jpg") center/cover;
+}
+.main__universe-lifestyle-history {
+	background: url("../img/history.jpg") center/cover;
+}
+.swiper__news {
+	overflow: hidden;
+	height: 350px;
+	margin-bottom: 140px;
+	position: relative;
+}
+.main__news {
+	position: relative;
+}
+.main__news-content {
+	display: grid;
+	grid-template: 350px / 590px 572px;
+	grid-gap: 37px;
+}
+.btn-news {
+	margin-right: 0;
+	position: absolute;
+	right: 0 !important;
+}
+.btn-news::after {
+	position: absolute;
+	color: var(--bg-color-footer);
+}
+.main__news-pic {
+	background: url("../img/slides-main/mx-30.jpg") center/cover;
+}
+.main__news-info {
+	font-size: 22px;
+	line-height: 31px;
+	font-weight: 500;
+	display: flex;
+}
+.main__news-info-text {
+	width: 502px;
+}
+.main__news-info-text h2 {
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 29.09px;
+	font-weight: 600;
+	margin: 16px 0px 13px;
+}
+.main__news-info p:first-of-type {
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+.main__news-pic-miles {
+	background: url("../img/slides-main/mazda-mile.jpg") center/cover;
+}
+.main__news-pic-america {
+	background: url("../img/slides-main/mazda-america.jpg") center/cover;
+}
+.footer {
+	height: 462px;
+	background-color: var(--bg-color-footer);
+	z-index: -1;
+}
+.footer__wrapper {
+	width: 1302px;
+	margin: 0 auto;
+}
+.footer__wrapper-sub {
+	width: 1201px;
+	display: grid;
+	grid-template: 93px / 31px 294px;
+	grid-gap: 11px;
+	align-items: center;
+	margin-left: 49px;
+}
+.footer__sub {
+	border-bottom: 2px solid rgba(153, 153, 153, 0.2);
+}
+.footer__sub-text a {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 500;
+	color: var(--сolor-text-footer);
+}
+.footer__sub-text a:hover {
+	color: var(--color-hover-effect);
+	transition: var(--speed-hover);
+}
+.footer__nav {
+	width: 1201px;
+	display: flex;
+	justify-content: space-between;
+	margin: 47px 0px 0px 49px;
+}
+.footer__nav-title h2 {
+	color: var(--сolor-text-footer);
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+.footer__nav-list a {
+	color: var(--сolor-text-footer);
+	line-height: 34px;
+}
+.footer__nav-list a:hover {
+	color: var(--color-hover-effect);
+	transition: var(--speed-hover);
+}
+.footer__social {
+	text-align: center;
+}
+.footer__social svg {
+	width: 56px;
+	height: 56px;
+}
+.footer__social svg:hover {
+	background-color: var(--color-hover-effect);
+	transition: var(--speed-hover);
+}
+.footer__nav-info {
+	width: 643px;
+	margin: 7px auto;
+}
+.footer__nav-info ul {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__nav-info-list a {
+	color: var(--сolor-text-footer);
+	font-size: 18px;
+}
+.footer__nav-info-list a:hover {
+	color: var(--color-hover-effect);
+}
+.footer__copyright {
+	margin: 24px 0px 37px;
+	color: var(--сolor-text-footer);
+	font-size: 18px;
+	text-align: center;
+}
+.ward {
+	background: url("../img/icons/Up.svg") center/cover;
+	position: absolute;
+	right: -8px;
+	bottom: -103px;
+	transition: var(--speed-hover);
+}
+.ward img {
+	width: 70px;
+	height: 70px;
+}
