@@ -1,4 +1,66 @@
 .main__explore-title h2 {
-	margin-top: 60px;
+	margin: 60px 0px 37px;
 	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+}
+.main__explore-items {
+	display: grid;
+	grid-template: 350px 350px / 589px 586px;
+	grid-gap: 22px;
+}
+.main__explore-items-sport-cars {
+	display: grid;
+	grid-template: 350px / 589px 586px;
+	grid-gap: 22px;
+	margin-bottom: 66px;
+}
+.main__cx3 {
+	background: url('../img/vehicles-item/cx-3.jpg') center / cover;
+}
+.main__cx30 {
+	background: url('../img/vehicles-item/cx-30.jpg') center / cover;
+}
+.main__cx5 {
+	background: url('../img/vehicles-item/cx-5.jpg') center / cover;
+}
+.main__m2 {
+	background: url('../img/vehicles-item/m2.jpg') center / cover;
+}
+.main__m3 {
+	background: url('../img/vehicles-item/m3.jpg') center / cover;
+}
+.main__m6 {
+	background: url('../img/vehicles-item/m6.jpg') center / cover;
+}
+.main__miata {
+	background: url('../img/vehicles-item/mx5.jpg') center / cover;
+}
+.main__miata-rf {
+	background: url('../img/vehicles-item/mx-5-rf.jpg') center / cover;
+}
+.main__explore-item-wrapper {
+	display: grid;
+	grid-template: 66px / 331px 256px;
+	background-color: rgba(43, 43, 43, 0.75);
+}
+.main__explore-item-title {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: var(--color-header-elements);
+	padding: 19px 0px 19px 30px;
+}
+.main__explore-item-btn {
+	padding: 23px 59px;
+	background-color: rgba(43, 43, 43, 0.3);
+}
+.main__explore-item-btn a {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.5);
+}
+.main__explore-item-btn a:hover {
+	color: var(--color-hover-effect);
+	transition: var(--speed-hover);
 }
