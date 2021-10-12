@@ -1,0 +1,33 @@
+.page,
+.swiper,
+.main__wrapper-content {
+	width: 100%;
+}
+.swiper {
+	height: 235px;
+}
+.header__logo img {
+	width: 44px;
+	height: 38px;
+	margin: 0
+}
+.main__vehicles-content {
+	grid-template-rows: repeat(4, 285px);
+	grid-template-columns: 320px;
+}
+.main__vehicles-all {
+	grid-column: 1;
+	grid-row: 1;
+}
+.main__vehicles-crossovers {
+	grid-column: 1;
+}
+.main__options {
+	grid-template-columns: 300px;
+	grid-template-rows: 65px 65px 65px;
+}
+.main__universe-lifestyle {
+	grid-template-rows: repeat(4, 285px);
+	grid-template-columns: 320px;
+	grid-template: 235px 325px / 320px;
+}
