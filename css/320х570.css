@@ -6,14 +6,33 @@
 .swiper {
 	height: 235px;
 }
-.header__logo img {
-	width: 44px;
-	height: 38px;
-	margin: 0
+.burger__menu,
+.header__logo img,
+.swiper-button-next,
+.swiper-button-prev {
+	display: none;
 }
-.main__vehicles-content {
-	grid-template-rows: repeat(4, 285px);
-	grid-template-columns: 320px;
+.header {
+	margin-top: 60px;
+}
+.header__title {
+	margin-top: 55px;
+}
+.header__title p {
+	font-size: 16px;
+	line-height: 21.39px;
+	margin-top: 7px;
+	letter-spacing: 1px;
+}
+.header__title h1 {
+	font-size: 10px;
+}
+
+
+
+.main__vehicles-content,
+.main__universe-lifestyle {
+	grid-template: repeat(4, 285px) / 320px;
 }
 .main__vehicles-all {
 	grid-column: 1;
@@ -23,11 +42,12 @@
 	grid-column: 1;
 }
 .main__options {
-	grid-template-columns: 300px;
-	grid-template-rows: 65px 65px 65px;
+	grid-template: repeat(3, 65px) / 300px;
 }
-.main__universe-lifestyle {
-	grid-template-rows: repeat(4, 285px);
-	grid-template-columns: 320px;
-	grid-template: 235px 325px / 320px;
+.main__news-content {
+	grid-template: 235px 326px / 320px;
+	grid-gap: 0;
+}
+.footer__wrapper {
+	width: 100%;
 }
