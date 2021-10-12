@@ -23,6 +23,12 @@ body {
 	width: 1440px;
 	margin: 0 auto;
 }
+.header {
+	position: relative;
+}
+.header__mobile {
+	display: none;
+}
 .swiper {
 	width: 1440px;
 	height: 900px;

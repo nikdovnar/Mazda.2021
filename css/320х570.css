@@ -5,15 +5,112 @@
 }
 .swiper {
 	height: 235px;
+	margin-top: 60px;
 }
 .burger__menu,
 .header__logo img,
 .swiper-button-next,
-.swiper-button-prev {
+.swiper-button-prev,
+.main__search,
+.header__button {
 	display: none;
 }
-.header {
-	margin-top: 60px;
+.header__mobile {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	background-color: var(--bg-color-footer);
+	position: fixed;
+	z-index: 2;
+	margin-top: -60px;
+}
+.header__mobile-logo img {
+	width: 44px;
+	height: 38px;
+	margin-left: 10px;
+}
+.header__mobile-search {
+	margin-left: 12px;
+}
+.header__mobile-search,
+.header__mobile-search input,
+.header__mobile-search form,
+.header__mobile-search button {
+	background-color: rgba(255, 255, 255, -0.93);
+}
+.header__mobile-search-wrapper {
+	display: inline-grid;
+	grid-auto-flow: column;
+	background-color: rgba(255, 255, 255, 0.07);
+	border-radius: 7px;
+	width: 205px;
+	height: 38px;
+}
+.header__mobile-search input {
+	width: 166px;
+	padding-left: 19px;
+}
+.header__mobile-search button {
+	order: 2;
+	display: flex;
+	align-items: center;
+}
+::placeholder {
+	color: rgba(255, 255, 255, 0.2);
+}
+.menu__btn {
+	top: 17px;
+	left: 283px;
+	width: 22px;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	height: 2px;
+}
+.menu__btn > span::before {
+	top: -7px;
+}
+.menu__btn > span::after {
+	top: 7px;
+}
+.accordion,
+.panel,
+.panel a,
+.active,
+.accordion:hover {
+	background-color: rgba(43, 43, 43, -0.5);
+}
+.menu__box {
+	width: 233px;
+	height: 752px;
+	z-index: 2;
+	padding: 30px 0px 0px 30px;
+	top: 60px;
+	background-color: rgba(43, 43, 43, 0.95);
+}
+.accordion {
+	width: 100%;
+	font-size: 18px;
+}
+.panel {
+	width: 100%;
+	margin-top: 23px;
+	padding-left: 12px;
+}
+.panel a {
+	font-size: 14px;
+}
+.panel p {
+	margin-bottom: 8px;
+}
+#menu__toggle:checked ~ .menu__btn > span,
+#menu__toggle:checked ~ .menu__btn > span::after {
+	width: 20px;
+}
+#menu__toggle:checked ~ .menu__box {
+	left: 89px;
 }
 .header__title {
 	margin-top: 55px;
@@ -22,14 +119,22 @@
 	font-size: 16px;
 	line-height: 21.39px;
 	margin-top: 7px;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 }
 .header__title h1 {
 	font-size: 10px;
 }
-
-
-
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	bottom: -20px;
+}
+span.swiper-pagination-bullet {
+	width: 7px;
+	height: 7px;
+	margin: 0px 4.07px !important;
+}
 .main__vehicles-content,
 .main__universe-lifestyle {
 	grid-template: repeat(4, 285px) / 320px;
@@ -48,6 +153,33 @@
 	grid-template: 235px 326px / 320px;
 	grid-gap: 0;
 }
+.footer {
+	height: 490px;
+}
 .footer__wrapper {
+	width: 272px;
+}
+.footer__sub {
+	width: 272px;
+	margin: 0 auto;
+}
+.footer__wrapper-sub {
 	width: 100%;
+	margin-left: 0px;
+	grid-template: 64px / 31px 243px;
+}
+.footer__wrapper-sub a {
+	font-size: 16px;
+}
+.footer__nav {
+	display: none;
+}
+.footer__nav-info {
+	width: 100%;
+}
+.footer__nav-info ul {
+	display: block;
+}
+.ward {
+	right: 23px;
 }

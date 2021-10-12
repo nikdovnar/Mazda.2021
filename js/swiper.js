@@ -7,11 +7,11 @@ const swiper1 = new Swiper('.swiper1', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-	autoplay: {
+/* 	autoplay: {
 		delay: 3500,
 		stopOnLastSlide: false,
 		disableOnInteraction: false,
-	},
+	}, */
 	keyboard: true,
 	loop: true,
 	speed: 1200,
@@ -20,11 +20,11 @@ const swiper2 = new Swiper('.swiper__news', {
 	navigation: {
 		nextEl: '.swiper-button-next',
 	},
-	autoplay: {
+/* 	autoplay: {
 		delay: 3500,
 		stopOnLastSlide: false,
 		disableOnInteraction: false,
-	},
+	}, */
 	keyboard: true,
 	loop: true,
 	speed: 1200,
