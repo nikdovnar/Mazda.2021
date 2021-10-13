@@ -26,7 +26,12 @@ body {
 .header {
 	position: relative;
 }
-.header__mobile {
+.header__mobile,
+.main__vehicles-mobile-arrow,
+.main__mobile-title,
+.main__btn-mobile,
+.footer__social-mobile,
+.footer__nav-mobile {
 	display: none;
 }
 .swiper {
