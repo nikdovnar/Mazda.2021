@@ -65,7 +65,7 @@
 ::placeholder {
 	color: rgba(255, 255, 255, 0.2);
 }
-.menu__btn-mobile{
+.menu__btn-mobile {
 	top: 15px;
 	right: 13px;
 	width: 22px;
@@ -204,6 +204,7 @@ span.swiper-pagination-bullet {
 .main__vehicles-content,
 .main__universe-lifestyle {
 	grid-template: repeat(4, 285px) / 1fr;
+	grid-gap: 0px;
 }
 .main__vehicles-all {
 	grid-column: 1;
