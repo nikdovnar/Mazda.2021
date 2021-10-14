@@ -31,7 +31,8 @@ body {
 .main__mobile-title,
 .main__btn-mobile,
 .footer__social-mobile,
-.footer__nav-mobile {
+.footer__nav-mobile,
+.main__options-content-mobile {
 	display: none;
 }
 .swiper {
@@ -92,7 +93,7 @@ span.swiper-pagination-bullet-active {
 	align-items: center;
 	position: absolute;
 	top: 56px;
-	left: 93px;
+	right: 1330px;
 	width: 26px;
 	height: 26px;
 	cursor: pointer;
@@ -119,7 +120,7 @@ span.swiper-pagination-bullet-active {
 	position: absolute;
 	visibility: hidden;
 	top: 0;
-	left: -100%;
+	right: -100%;
 	width: 50%;
 	height: 100%;
 	padding-top: 182px;
@@ -164,7 +165,7 @@ span.swiper-pagination-bullet-active {
 }
 #menu__toggle:checked ~ .menu__box {
 	visibility: visible;
-	left: 0;
+	right: 0;
 }
 .menu__btn > span,
 .menu__btn > span::before,
