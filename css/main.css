@@ -120,7 +120,7 @@ span.swiper-pagination-bullet-active {
 	position: absolute;
 	visibility: hidden;
 	top: 0;
-	right: -100%;
+	left: -100%;
 	width: 50%;
 	height: 100%;
 	padding-top: 182px;
@@ -165,7 +165,7 @@ span.swiper-pagination-bullet-active {
 }
 #menu__toggle:checked ~ .menu__box {
 	visibility: visible;
-	right: 0;
+	left: 0;
 }
 .menu__btn > span,
 .menu__btn > span::before,
